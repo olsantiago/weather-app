@@ -16,11 +16,6 @@ yarn install --check-files
 ./bin/rails db:schema:load
 ```
 
-#### Load data from dev server
-
-You must be connected to the VPN for this step. See [here](https://welcome.atlassian.net/wiki/spaces/ENGINEERIN/pages/128712709/Tools+Utilities+prerequisites#VPN-Client) for VPN setup.
-
-
 Running the server
 ------------------
 ```
