@@ -4,9 +4,8 @@
 module OpenWeather
   # OpenWeather connection to faraday
   module Connection
-    # needs to be on .env file
-    API_KEY = '549b7514c3e0e372421c85b726f39a8a'
-    BASE_URL = 'https://api.openweathermap.org'
+    API_KEY = ENV['OPENWEATHER_API_KEY']
+    BASE_URL = ENV['OPENWEATHER_URL']
 
     def connection
       @connection ||= Faraday.new(

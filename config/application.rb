@@ -8,6 +8,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# Load .env file in development and test environments
+Dotenv::Railtie.load if Rails.env.development?
+
 module WeatherApp
   # main application
   class Application < Rails::Application
